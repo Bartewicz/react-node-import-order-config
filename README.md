@@ -47,6 +47,20 @@ In the following setup from current repository you can find some rules to be opt
 
 Direct CSS imports from stylesheets, like `import 'styles.css'`, do not import any value and so are considered side-effecting imports, it is not safe to be automatically ordered by linters - thus have to be ordered manually.
 
-# StackBlitz
+# Try it out!
+
+You may try running `eslint` from the integrated terminal in StackBlitz, where this repository was created, to see how the rules group imports in certain files. Open the link below and try the following commands:
+
+```
+~/projects/node-wifkwb
+// Run projects and see errors about imports in the files
+> npm run dev
+// Open backend/server.js and run the following, observe imports:
+> eslint --fix backend/server.js
+// Then open frontend/src/index.js and run in terminal:
+> eslint --fix frontend/src/index.js
+// Clean up manually unused import and run the project again:
+> npm run dev
+```
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-wifkwb)
