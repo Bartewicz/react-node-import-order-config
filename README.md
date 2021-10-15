@@ -52,7 +52,7 @@ Direct CSS imports from stylesheets, like `import 'styles.css'`, do not import a
 You may try running `eslint` from the integrated terminal in StackBlitz, where this repository was created, to see how the rules group imports in certain files. Open the link below and try the following commands:
 
 ```
-~/projects/node-wifkwb
+~/projects/react-node-organize-imports
 // Run projects and see errors about imports in the files
 > npm run dev
 // Open backend/server.js and run the following, observe imports:
