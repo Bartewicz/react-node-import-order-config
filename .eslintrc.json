@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "react-app", // Required if using React without CRA
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2015, // recommended: "latest"
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-multiple-empty-lines": [
+      "error",
+      { "max": 1, "maxBOF": 0, "maxEOF": 0 }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          ["internal", "parent", "sibling", "object", "index", "type"]
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react*",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}
